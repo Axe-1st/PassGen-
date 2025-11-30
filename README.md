@@ -1,11 +1,35 @@
-<div align="center">
+# PassGen Pro
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A client-side generator for Apple Wallet (.pkpass) and Google Pay (.gpay) passes.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- Visual real-time preview
+- Apple & Google format support
+- Webcam QR/Barcode scanning
+- Image asset handling (Logo, Background)
+- Client-side ZIP generation
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Deployment to GitHub Pages
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-</div>
+2. **Configure Vite (vite.config.ts)**
+   Ensure your `vite.config.ts` sets the base URL to your repository name:
+   ```typescript
+   import { defineConfig } from 'vite'
+   import react from '@vitejs/plugin-react'
+
+   export default defineConfig({
+     plugins: [react()],
+     base: '/your-repo-name/',
+   })
+   ```
+
+3. **Deploy**
+   Run the deployment script which builds the app and pushes the `dist` folder to the `gh-pages` branch.
+   ```bash
+   npm run deploy
+   ```

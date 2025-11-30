@@ -1,0 +1,7 @@
+{
+  "name": "PassGen Pro",
+  "description": "A professional Apple Wallet and Google Pay pass generator with visual designer, barcode scanning, and asset management.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
